@@ -23,7 +23,7 @@ router.get('/:id', async (req, res) => {
   try {
     const singleTagData = await Tag.findByPk(req.params.id, {
 
-      include: [{ model: Product },{ model: ProductTag }]
+      include: [{ model: Product }]
       //,{ model: ProductTag }
     });
 
@@ -46,7 +46,7 @@ router.post('/', (req, res) => {
       tag_name: req.body.tag_name
     });
 
-    res.status(200).json(tag);
+    res.status(200).json({ message: 'New tag has been created' });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -54,14 +54,16 @@ router.post('/', (req, res) => {
 
 router.put('/:id', (req, res) => {
   // update a tag's name by its `id` value
+  try {
   Tag.update(req.body, {
     where: {
       id: req.params.id,
     },
-  }); if (err) {
+  }); }
+  catch  (err) {
     res.status(400).json(err);
   }
-
+  res.status(201).json({ message: 'Tag has been updated!' });
 });
 
 router.delete('/:id', (req, res) => {
@@ -78,7 +80,7 @@ router.delete('/:id', (req, res) => {
       return;
     }
 
-    res.status(200).json(tagData);
+    res.status(200).json({ message: 'Tag has been deleted!' });
   } catch (err) {
     res.status(500).json(err);
   }
