@@ -1,15 +1,16 @@
 
 
-# Employee Tracker  [![badge](https://img.shields.io/static/v1?label=license&message=GPL-3.0&color=green)](https://choosealicense.com/licenses/gpl-3.0/)
+# 
+E-commerce-Back-End  [![badge](https://img.shields.io/static/v1?label=license&message=GPL-3.0&color=green)](https://choosealicense.com/licenses/gpl-3.0/)
 
 ## Description
-This program is an employee tracker application. It allows you to create employees, roles and departments and add details sucj as job title, salary and department for each employee.
+This program is an E-commerce-Back-End application containing back end for an e-commerce site.
 
 ![screenshot](./Assets/screenshot.png)
 
 ## Links
-https://github.com/Anastasia095/Employee-Tracker
-Video: https://drive.google.com/file/d/1CueRk97KmN_wDobfV1Ytjto_zw0GyCCD/view
+https://github.com/Anastasia095/E-commerce-Back-End  
+Video: https://drive.google.com/file/d/1_QUNE4pnJ4JVO4iK1E6m5JMpeJNMbemo/view
   ## Table of Content
   - [Installation](#installation)
   - [Usage](#usage)
@@ -17,9 +18,9 @@ Video: https://drive.google.com/file/d/1CueRk97KmN_wDobfV1Ytjto_zw0GyCCD/view
   - [License](#license)
 
   ## Installation
-To use this app clone this repository to your machine, install Node.JS and git (see instructions below). After you sucsessfully installed node.js, navigater to the root directyory of this program and run "npm i"(this command will install all required node modules and dependancies). To start the program run "npm start".
+To use this app clone this repository to your machine, install Node.JS and git (see instructions below). After you sucsessfully installed node.js, navigater to the root directyory of this program and run "npm i"(this command will install all required node modules and dependancies). Use the schema.sql file in the db folder to create your database using MySQL shell commands. Use environment variables to store sensitive data, like your MySQL username, password, and database name. Run npm run seed to seed test data to your database. To start the program run "npm start".
   ## Usage
-  This app is used to manage employees information.
+ This program is an E-commerce-Back-End application containing back end for an e-commerce site.
 
   ## Credits
   Anastasia095
